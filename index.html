@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(224, 161, 161);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(184, 243, 235);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px sol<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;id #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Restoration Time Calculator</h2>
+<p>Click on the the tabbed menu for your need:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Kolkata')" id="defaultOpen">Welcome</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Feeder 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Feeder 2</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">SMS Generator</button>
+  <button class="tablinks" onclick="openCity(event, 'Delhi')">LT to HT Conversion</button>
+</div>
+
+<div id="Kolkata" class="tabcontent">
+  <h1>Welcome</h1>
+
+  <p><h2>To</h2></p>
+ <p><h1>Shift Charge Engineer's Portal for Feeder Tripping Related Job</h1></p>
+</div>
+
+<div id="London" class="tabcontent">
+
+
+  <p>
+    
+<head>
+ <title>Restoration Time Calculator</title>
+ <hr>
+ <style>
+  body {
+   background-color: rgb(78, 77, 77);
+   color: white;
+   font-family: Arial, sans-serif;
+   text-align: center;
+  }
+  h1 {
+   color: Chartreuse;
+   font-weight: bold;
+   background-color:rgb(190, 219, 248);
+  }
+  input[type=text] {
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   font-size: 18px;
+   text-align: center;
+  }
+  input[type=button] {
+   padding: 10px 20px;
+   margin: 10px;
+   border-radius: 5px;
+   border: none;
+   background-color: rgb(160, 160, 250);
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+  }
+ </style>
+</head>
+<body>
+ <h1>Restoration Time Calculator</h1>
+ <hr>
+ <label>Tripping Time</label>
+ <input type="text" id="trippingTime" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime" placeholder="hh:mm">
+ <br>
+ <label>Duration</label>
+ <input type="text" id="duration" readonly>
+ <br>
+ <input type="button" value="Calculate Duration" onclick="calculateDuration()">
+ <input type="button" value="Refresh" onclick="refresh1()">
+ <br>
+ <hr>
+ <br>
+<!-- <label>Tripping Time</label>
+ <input type="text" id="trippingTime2" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime2" placeholder="hh:mm">
+ <label>Duration</label>
+ <input type="text" id="duration2" readonly>
+ <br>
+ <input type="button" value="Calculate Duration2" onclick="calculateDuration2()">
+ <input type="button" value="Refresh2" onclick="refresh2()">
+ <br>
+ <hr>
+ <br>
+	
+	
+<label>Tripping Time</label>
+ <input type="text" id="trippingTime3" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime3" placeholder="hh:mm">
+ <label>Duration</label>
+ <input type="text" id="duration3" readonly>
+ <br>
+ <input type="button" value="Calculate Duration3" onclick="calculateDuration3()">
+    <input type="button" value="Refresh3" onclick="refresh3()">
+ <br>
+ <br>
+ <hr> -->
+	
+ <h4>With ❤️ from Aritra.<h4>
+<br>
+<script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
+<small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+
+
+<script>
+      function refresh1()
+            {
+             document.getElementById("restorationTime").value= "";
+             document.getElementById("duration").value= "";
+             document.getElementById("trippingTime").value= "";
+                
+              }
+
+   function calculateDuration() {
+   var trippingTime = document.getElementById("trippingTime").value;
+   var restorationTime = document.getElementById("restorationTime").value;
+   if (restorationTime < trippingTime) {
+    restorationTime = add24Hours(restorationTime);
+   }
+   var duration = getDuration(trippingTime, restorationTime);
+   document.getElementById("duration").value = duration;
+  }
+  
+
+  
+  
+
+  function add24Hours(time) {
+   var hours = parseInt(time.split(":")[0]) + 24;
+   var minutes = parseInt(time.split(":")[1]);
+   return hours + ":" + minutes;
+  }
+
+  function getDuration(startTime, endTime) {
+   var start = new Date();
+   var end = new Date();
+   start.setHours(parseInt(startTime.split(":")[0]));
+   start.setMinutes(parseInt(startTime.split(":")[1]));
+   end.setHours(parseInt(endTime.split(":")[0]));
+   end.setMinutes(parseInt(endTime.split(":")[1]));
+   var duration = end.getTime() - start.getTime();
+   var hours = Math.floor(duration / (1000 * 60 * 60));
+   var minutes = Math.floor((duration / (1000 * 60)) % 60);
+   return hours + " hrs and " + minutes + " mins";
+  }
+ </script>
+</body>
+
+      
+      
+      
+  </p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  
+  <p>
+     
+<head>
+ <title>Restoration Time Calculator</title>
+ <hr>
+ <style>
+  body {
+   background-color: black;
+   color: white;
+   font-family: Arial, sans-serif;
+   text-align: center;
+  }
+  h1 {
+   color: blue;
+   font-weight: bold;
+  }
+  input[type=text] {
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px;
+   border: none;
+   width: 200px;
+   font-size: 18px;
+   text-align: center;
+  }
+  input[type=button] {
+   padding: 10px 20px;
+   margin: 10px;
+   border-radius: 5px;
+   border: none;
+   background-color: rgb(129, 129, 236);
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+  }
+ </style>
+</head>
+<body>
+<h1>Restoration Time Calculator</h1>
+ <hr>
+ <!--
+ <label>Tripping Time</label>
+ <input type="text" id="trippingTime" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime" placeholder="hh:mm">
+ <label>Duration</label>
+ <input type="text" id="duration" readonly>
+ <br>
+ <input type="button" value="Calculate Duration" onclick="calculateDuration()">
+ <input type="button" value="Refresh1" onclick="refresh1()">
+ <br>
+ <hr>
+ <br> -->
+ <label>Tripping Time</label>
+ <input type="text" id="trippingTime2" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime2" placeholder="hh:mm">
+ <br>
+ <label>Duration</label>
+ <input type="text" id="duration2" readonly>
+ <br>
+ <input type="button" value="Calculate Duration" onclick="calculateDuration2()">
+ <input type="button" value="Refresh" onclick="refresh2()">
+ <br>
+ <hr>
+ <br>
+ <!--
+	
+<label>Tripping Time</label>
+ <input type="text" id="trippingTime3" placeholder="hh:mm">
+ <label>Restoration Time</label>
+ <input type="text" id="restorationTime3" placeholder="hh:mm">
+ <label>Duration</label>
+ <input type="text" id="duration3" readonly>
+ <br>
+ <input type="button" value="Calculate Duration3" onclick="calculateDuration3()">
+    <input type="button" value="Refresh3" onclick="refresh3()">
+ <br>
+ <br>
+ <hr>
+ -->
+ <h4>With ❤️ from Aritra.<h4>
+     
+     <br>
+     <script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
+<small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+     
+     
+ <script>
+      
+        function refresh2()
+            {
+             document.getElementById("restorationTime2").value= "";
+             document.getElementById("duration2").value= "";
+             document.getElementById("trippingTime2").value= "";
+            }
+        
+  
+function calculateDuration2() {
+   var trippingTime = document.getElementById("trippingTime2").value;
+   var restorationTime = document.getElementById("restorationTime2").value;
+   if (restorationTime < trippingTime) {
+    restorationTime = add24Hours(restorationTime);
+   }
+   var duration = getDuration(trippingTime, restorationTime);
+   document.getElementById("duration2").value = duration;
+  }
+
+  
+  
+
+  function add24Hours(time) {
+   var hours = parseInt(time.split(":")[0]) + 24;
+   var minutes = parseInt(time.split(":")[1]);
+   return hours + ":" + minutes;
+  }
+
+  function getDuration(startTime, endTime) {
+   var start = new Date();
+   var end = new Date();
+   start.setHours(parseInt(startTime.split(":")[0]));
+   start.setMinutes(parseInt(startTime.split(":")[1]));
+   end.setHours(parseInt(endTime.split(":")[0]));
+   end.setMinutes(parseInt(endTime.split(":")[1]));
+   var duration = end.getTime() - start.getTime();
+   var hours = Math.floor(duration / (1000 * 60 * 60));
+   var minutes = Math.floor((duration / (1000 * 60)) % 60);
+   return hours + " hrs and " + minutes + " mins";
+  }
+ </script>
+</body>
+
+      
+      
+      
+      
+      
+      
+      
+  </p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+  <p> 
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Text Box with Buttons</title>
+  </head>
+  <body>
+    <hr><h1><label for="textbox1">SMS Generator for Cable Fault & Flashover</label></h1><hr><br>
+    <textarea id="textbox1" name="textbox1" rows="10" cols="70" maxlength="1000"></textarea>
+    
+    <br><br>
+    <input type="button" value="Cable fault in the section between" onclick="insertText('Cable fault in the section between')" >
+     <input type="button" value="F/O at HT fuse chamber of" onclick="insertText('F/O at HT fuse chamber of')" >
+     <input type="button" value="F/O at cable box of" onclick="insertText('F/O at cable box of')" >
+    <input type="button" value="Cable size: " onclick="insertText('Cable size: ')">
+    <input type="button" value="Condition: " onclick="insertText('Condition:')">
+    <input type="button" value="Ω" onclick="insertText('Ω')" >
+ <br>
+ <br>
+    <input type="button" value="T/L brought out, chapni placed and ext s.e, raychem out ext s.e." onclick="insertText('T/L brought out, chapni placed and ext s.e, raychem out ext s.e.')">
+ <input type="button" value="T/L brought out and ext s.e" onclick="insertText('T/L brought out and ext s.e,')">
+ <input type="button" value="T/L brought out, chapni placed and ext s.e" onclick="insertText('T/L brought out, chapni placed and ext s.e')">
+    <br>
+ <br>
+ <input type="button" value="All 3ph HT HRC blown" onclick="insertText('All 3ph HT HRC blown')">
+ <input type="button" value="fuse chamber door damaged" onclick="insertText('fuse chamber door damaged')">
+ <input type="button" value="HT isolator open" onclick="insertText('HT isolator open')">
+ <input type="button" value="link disconnected and both HT box ext s.e. " onclick="insertText('link disconnected and both HT box ext s.e.')">
+ 
+    <br>
+ <br>
+ 
+ 
+ <input type="button" value="Test plug inserted and ext s.e," onclick="insertText('Test plug inserted and ext s.e,')">
+ <input type="button" value="Circuit side ext s.e," onclick="insertText('Circuit side ext s.e,')">
+ <input type="button" value="RMU cable earth" onclick="insertText('RMU cable earth')">
+ <input type="button" value="Also RMU busbar de-energized" onclick="insertText('Also RMU busbar de-energized')"><br>
+<input type="button" style="background-color:red; border-color:blue; color:white" value="Refresh" onclick="refresh4()">
+ <h4>With ❤️ from Aritra.<h4>
+     <br>
+     <script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
+<small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+ 
+ 
+ <script>
+      function insertText(text) {
+        var textbox = document.getElementById("textbox1");
+        var startPos = textbox.selectionStart;
+        var endPos = textbox.selectionEnd;
+        var scrollTop = textbox.scrollTop;
+        textbox.value = textbox.value.substring(0, startPos) + text + textbox.value.substring(endPos,textbox.value.length);
+        textbox.focus();
+        textbox.selectionStart = startPos + text.length;
+        textbox.selectionEnd = startPos + text.length;
+        textbox.scrollTop = scrollTop;
+      }
+
+ function refresh4()
+            {
+             document.getElementById("textbox1").value= "";
+                        }
+    </script>
+  </body>
+</html>
+  
+  </p>
+</div>
+
+
+<div id="Delhi" class="tabcontent">
+<head>
+<title>HT Load Calculator</title>
+</head>
+
+<body>
+<h1>DTR LT to HT Load Conversion</h1>
+
+<label for="ltLoad">LT Load in Amps:</label>
+<input type="text" id="ltLoad" name="ltLoad">
+
+<div>
+<input type="radio" id="6kV" name="voltage" value="6kV">
+<label for="6kV">6kV</label>
+	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
+<input type="radio" id="11kV" name="voltage" value="11kV">
+<label for="11kV">11kV</label>
+</div>
+
+
+
+<label for="htLoad">HT Load in Amps:</label>
+<input type="text" id="htLoad" name="htLoad" ><br>
+<input type="button" value= "Calculate HT Load" onclick="calculateHTLoad()">   <br>
+ <br>
+<input type="button" style="background-color:red; border-color:blue; color:white" value="Refresh" onclick="refresh5()">
+<script>
+function refresh5()
+            {
+             document.getElementById("ltLoad").value= "";
+             document.getElementById("htLoad").value= "";
+             
+                
+              }
+
+function calculateHTLoad() {
+  var ltLoad = document.getElementById("ltLoad").value;
+  var voltage = document.querySelector('input[name="voltage"]:checked').value;
+
+  var htLod = 0;
+  if (voltage === "6kV") {
+    htLod = ltLoad * 230 * 1.732 / 6000;
+  } else if (voltage === "11kV") {
+    htLod = ltLoad * 230 * 1.732 / 11000;
+  }
+
+  document.getElementById("htLoad").value = htLod.toFixed(2);
+
+}
+
+
+
+</script>
+<hr>
+<h4>With ❤️ from Aritra.<h4>
+     <br>
+     <script type="text/javascript" src="https://www.brainyquote.com/link/quotefu.js"></script>
+<small><i><a href="/feeds/funny" target="_blank" rel="nofollow">more Funny Quotes</a></i></small>
+ 
+
+</body>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  
+  evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
