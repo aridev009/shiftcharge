@@ -571,9 +571,29 @@ function calculateHTLoad() {
   background-color: #eee;
 }
 
-
+#passwordOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
+#passwordContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#passwordInput {
+  padding: 10px;
+  font-size: 16px;
+}
 
 
 
@@ -582,6 +602,16 @@ function calculateHTLoad() {
 </style>
 </head>
 <body>
+
+<div id="passwordOverlay">
+  <div id="passwordContainer">
+    <label for="passwordInput">Aritra must have shared it with you.</label><br>
+    <input type="password" id="passwordInput"><br><br>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+</div>
+
+
 
 
 
@@ -2829,7 +2859,18 @@ CHITKALIKAPUR, NITAINAGAR, KOLKATA **ATANU CHAKROBORTY, CM, DSC-KEIIP- 983115289
 </ul>
 
 <script>
+function checkPassword() {
+  const passwordInput = document.getElementById("passwordInput");
+  const password = passwordInput.value;
+  const passwordOverlay = document.getElementById("passwordOverlay");
 
+  if (password === "hello") {
+    passwordOverlay.style.display = "none";
+  } else {
+    alert("Wrong. That password is like trying to power a city with a 9-volt battery. Please try something stronger.");
+    passwordInput.value = ""; // Clear the input
+  }
+}
 
 
 
